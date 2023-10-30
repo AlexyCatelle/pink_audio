@@ -151,13 +151,15 @@ a {
 
 img {
   max-width: 100%;
-  padding:1rem;
+  padding: 1rem;
 }
 
-li {border:$primary-color solid 0.2rem;
-padding:1rem;
-margin:1rem;
-text-align: center;}
+li {
+  border: $primary-color solid 0.2rem;
+  padding: 1rem;
+  margin: 1rem;
+  text-align: center;
+}
 
 // v2 styles
 .page {
@@ -178,79 +180,95 @@ text-align: center;}
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-    
-    .intro{
-      display:flex;
+
+    .intro {
+      display: flex;
       align-items: center;
-    justify-content: center;
-      &__title
-      {color:$text-color;
-      font-size: 3rem;
-      font-weight:800 ;
-    }
-    &__picture{padding:0}
+      justify-content: space-evenly;
+
+      &__title {
+        color: $text-color;
+        font-size: 3rem;
+        font-weight: 800;
+      }
+
+      &__desc {
+        margin-bottom: 1rem;
+      }
+
+      &__picture {
+        padding: 0
+      }
     }
 
     .segment {
       background-color: white;
       margin-bottom: 3rem;
       padding: 1rem;
-      display:flex;
+      display: flex;
       flex-wrap: wrap;
       align-items: center;
 
       &__title {
         color: $text-color;
-        font-weight:900;
-        width:100%;
+        font-weight: 900;
+        width: 100%;
         font-size: 2rem;
-        margin:1rem;
-  
+        margin: 1rem;
+
       }
-      &__desc{
-        width:100%;
-        margin:1rem;
+
+      &__desc {
+        width: 100%;
+        margin: 1rem;
       }
-      .list{
-        width:50%;
+
+      .list {
+        width: 50%;
         display: flex;
         flex-direction: column;
       }
-.list__100-3{
-  width:100%;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  flex-direction: row;
-  &__button{
-    width:30%;
-  }
-}
-      &__picture{
-        width:50%
+
+      .list__100-3 {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        flex-direction: row;
+
+        &__button {
+          width: 30%;
+        }
       }
-      &__actions{
-        display:flex;
-        gap:1rem;
-        width:100%;
-        margin:1rem;
+
+      &__picture {
+        width: 50%
+      }
+
+      &__actions {
+        display: flex;
+        gap: 1rem;
+        width: 100%;
+        margin: 1rem;
       }
     }
   }
-        .btn{
-          display:flex;
-          color:white;
-           background-color: $text-color;
-           padding:1rem;
-           gap:1rem;
-          max-width: 18rem;       
-        }
 
-        .btn:hover{
-          color:$text-color;
-          background-color:white;
-          padding:1rem;
-          border: $text-color solid 0.1rem;
-        }
+  .btn {
+    display: flex;
+    color: white;
+    background-color: $text-color;
+    padding: 1rem;
+    gap: 1rem;
+    max-width: 18rem;
+  }
+
+  .btn:hover {
+    color: $text-color;
+    background-color: white;
+    padding: 1rem;
+    border: $text-color solid 0.1rem;
+  }
+
   &__footer {
     padding: 1rem;
     text-align: center;
